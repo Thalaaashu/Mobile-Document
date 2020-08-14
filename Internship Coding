@@ -1,0 +1,27 @@
+#include <algorithm>
+#include<vector>
+#include <iostream>
+
+
+int main(){
+vector<int> arr;
+int i; 
+    for (i = 0; i < 10; i++) { 
+        int num = (rand() % 
+           (500- 1+ 1)) -1; 
+        printf("%d ", num); 
+arr.push_back(num);
+    } 
+for(i=0;i<arr.size();i++)
+	{		
+		for(j=i+1;j<arr.size();j++)
+		{
+			if(arr[i]>arr[j])
+			{
+				temp  =arr[i];
+				arr[i]=arr[j];
+				arr[j]=temp;
+			}
+		}
+	}
+}
